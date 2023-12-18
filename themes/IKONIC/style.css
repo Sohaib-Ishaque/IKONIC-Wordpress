@@ -1,0 +1,1099 @@
+/*
+Theme Name: IKONIC
+Theme URI: https://ikonicsolution.com/
+Author: Sohaib Ishaque
+Author URI: https://engineersohaibishaque.netlify.app/
+Description: Ikonic Solution is a team of talented agile developers who provide bespoke software development services.
+Requires at least: 5.1.1
+Tested up to: 6.0
+Requires PHP: 5.6
+Version: 2.5.1
+Text Domain: IKONIC
+Tags: black, white, light, four-columns, responsive-layout, custom-colors, custom-header, custom-menu, featured-image-header, full-width-template, sticky-post, theme-options, translation-ready, threaded-comments
+License: 
+License URI: 
+*/
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap"); */
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #222429;
+}
+
+section {
+  padding: 8rem 9%;
+}
+a{
+  text-decoration: none;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 0.2rem solid #222429;
+  color: #222429;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+}
+
+.btn:hover {
+  background: #222429;
+  color: #fff;
+}
+.heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    color: #222429;
+    font-weight: 700;
+}
+.mt-5{
+  margin-top: 5rem;
+}
+.mt-10{
+  margin-top: 10rem;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 9%;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header.active {
+  background: #fff;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+  margin-right: auto;
+  font-size: 2.5rem;
+  color: #222429;
+  font-weight: bolder;
+}
+
+.header .logo i {
+  color: #175cff;
+}
+
+.header .logo img{
+  width: 100%;
+  height: 20px;
+}
+
+.header .navbar a {
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  color: #222429;
+}
+
+.header .navbar a:hover {
+  color: #175cff;
+}
+
+.header .navbar #nav-close {
+  font-size: 5rem;
+  cursor: pointer;
+  color: #222429;
+  display: none;
+}
+
+.header .icons a,
+.header .icons div {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  color: #222429;
+}
+
+.header .icons a:hover,
+.header .icons div:hover {
+  color: #175cff;
+}
+
+.header #menu-btn {
+  display: none;
+}
+
+.home {
+  padding: 0;
+}
+
+.home .box {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover !important;
+  background-position: center !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2rem 9%;
+  opacity: .9;
+}
+
+.home .box.second {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.home .box .content {
+  width: 100%;
+  padding: 5rem;
+  background: rgb(255,170,23);
+  background: linear-gradient(342deg, rgba(4, 59, 92, 1) 0%, rgba(30, 81, 123,.4) 100%);
+}
+.home .box .content span {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.home .box .content h3 {
+  font-size: 6rem;
+  line-height: 6rem;
+  color: #175cff;
+  padding-top: .5rem;
+  text-transform: uppercase;
+}
+
+.home .box .content p {
+  line-height: 2;
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+.home .btn{
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2rem;
+  color: #fff;
+  background: #175cff;
+  padding: 9px 14px;
+  border-radius: 30px;
+}
+
+.services {
+  background: #eee;
+}
+.services.qoutes_script{
+  background: gray;
+}
+
+.services .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(37rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+  gap: 1.5rem;
+  row-gap: 6rem;
+}
+.services .box-container .box {
+    text-align: center;
+    border: 0.2rem solid #222429;
+    border-radius: .5rem;
+    background: #fff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+}
+.services .box-container .box.qoutes-box{
+  align-items: center;
+  justify-content: center;
+  padding: 6rem;
+  height: auto;
+}
+
+.services .box-container .box:hover {
+  background: #222429;
+  border: 0.2rem solid #fff;
+}
+
+.services .box-container .box:hover h1{
+  background: #fff;
+  color: #222429;
+  border: 10px solid #222429;
+}
+
+.services .box-container .box h1{
+  font-size: 3.3rem;
+  color: #fff;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 10px solid #fff;
+}
+.services .box-container .box:hover p {
+  color: #fff;
+}
+
+.services .box-container .box:hover .btn {
+  border-color: #fff;
+  color: #fff;
+}
+
+.services .box-container .box:hover .btn:hover {
+  background: #fff;
+  color: #222429;
+}
+.services .box-container .box .img-holder{
+  width: 100%;
+  height: 250px;
+}
+
+.services .box-container .box img {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 99;
+}
+
+.services .box-container .box .content{
+  padding: 1rem 2rem;
+  text-align: left;
+}
+.services .box-container .box h3 {
+    color: #175cff;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+.services .box-container .box p {
+  color: #222429;
+  padding: 1rem 0;
+  line-height: inherit;
+  font-size: 2rem;
+}
+.services .box-container .box .btn{
+  margin-bottom: 1rem;
+}
+
+.cta{
+  background: gray;
+}
+
+.cta .container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.cta .container h1.heading{
+  text-align: left;
+}
+.cta .container p {
+    font-size: 2rem;
+    line-height: 2;
+    color: #fff;
+    max-width: 500px;
+}
+
+.newsletter {
+  background: #fff;
+}
+
+.newsletter .content {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.newsletter .content .txt-content{
+	max-width: 500px;
+}
+.newsletter .content .heading{
+	text-align: left;
+}
+
+.newsletter .content p {
+  font-size: 2rem;
+  line-height: 2;
+  color: #222429;
+}
+
+.newsletter .content form {
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 5rem;
+  border: 0.2rem solid #222429;
+  padding: .7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+}
+
+.newsletter .content form .email {
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: #222429;
+  padding: 0 1.3rem;
+}
+
+.newsletter .content form .btn {
+  margin-top: 0;
+  border-radius: 5rem;
+  background: #222429;
+  color: #fff;
+}
+
+.newsletter .content form .btn:hover {
+  background: none;
+  color: #222429;
+}
+
+.footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(https://wallpapers.com/images/high/times-square-new-york-city-night-view-ltchxndc0rzkofbf.webp) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://wallpapers.com/images/high/times-square-new-york-city-night-view-ltchxndc0rzkofbf.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: .9;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  color: #fff;
+}
+
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+  color: #175cff;
+  padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover {
+  color: #175cff;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+.footer .box-container .box a i{
+  font-size: 2rem;
+  color: #175cff;
+}
+.footer .credit {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.footer .credit span {
+  color: #175cff;
+}
+
+#courses{
+  padding: 8vw;
+  text-align: center;
+}
+#courses .courses{
+  text-align: start;
+  background: #e2e2e2;
+  height: 100%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+#courses .course_box{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  grid-gap: 2rem;
+  margin-top: 50px;
+  overflow: hidden;
+}
+#courses .course_box a{
+  position: relative; 
+  z-index: 9; 
+}
+#courses .course_box .category{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #175cff;
+  z-index: 99;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  color: #fff;
+  border-top-right-radius: 5px;
+}
+#courses .course_box .id{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #175cff;
+  z-index: 99;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  color: #fff;
+  border-top-left-radius: 5px;
+}
+#courses .course_box .category p,
+#courses .course_box .id p{
+  font-size: 2rem;
+}
+#courses .courses img{
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#courses .courses .details{
+  padding: 15px 15px 0 15px;
+}
+#courses .courses .details i{
+  color: black;
+  font-size: .9rem;
+}
+#courses .courses .price{
+  background: #175cff;
+  color: #fff;
+  line-height: 70px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+}
+#courses .courses .details h6 {
+    color: #175cff;
+    font-size: 2.2rem;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+#courses .courses .details .ratings i{
+  color: #175cff;
+}
+#courses .courses .details p{
+  font-size: 1.4rem;
+  color: black;
+}
+#courses .courses .details span{
+  font-size: 1.3rem;
+  color: black;
+}
+#courses .btn{
+  margin-top: 30px;
+}
+#courses .btn a{
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  font-weight: 700;
+  border-radius: 20px;
+  transition: .5s ease;
+}
+#courses .pagination{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .4rem;
+}
+#courses .pagination a{
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-weight: 700;
+  border-radius: 20px;
+  transition: .5s ease;
+  background: black;
+  color: #fff;
+}
+#courses .pagination a.active{
+  background: #175cff;
+}
+
+
+#about{
+  background-image: linear-gradient(rgba(5, 56, 25, .9),rgba(14,5,5,.9)), url("https://wallpapers.com/images/high/times-square-new-york-city-night-view-ltchxndc0rzkofbf.webp");
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 40px;
+}
+#about h2 {
+    color: #fff;
+    font-size: 4.2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+#about p{
+  width: 50%;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 25px;
+}
+#about_details{
+  display: flex;
+  align-items: center;
+  padding: 8vw 8vw 2vw 8vw;
+}
+#about_details .abot_img{
+  width: 60%;
+  padding-right: 60px;
+}
+#about_details .abot_img img{
+  width: 100%;
+}
+#about_details .about_text{
+  width: 40%;
+}
+#about_details .about_text h2{
+  color: black;
+  padding-bottom: 15px;
+}
+#about_details .about_text p{
+  color: gray;
+  padding-bottom: 15px;
+}
+#about_details .about_text .about_feature{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+#about_details .about_text .about_feature img{
+  width: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+#about_details .about_text .about_feature .feature_text{
+  width: 90%;
+}
+#about_details .about_text .about_feature .feature_text h5{
+  font-size: 1rem;
+  color: black;
+}
+#course_details{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 8vw;
+} 
+#course_details .left_section{
+  width: 70%;
+}
+#course_details .left_section .post_img {
+    width: 100%;
+    height: 400px;
+}
+#course_details .left_section .post_img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+#course_details .left_section .course_info{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+#course_details .left_section .course_info .course_name{
+  width: 100%;
+}
+
+#course_details .left_section .course_info .course_name h2{
+  margin-top: 1.4rem;
+  color: #175cff;
+}
+#course_details .left_section .course_info .course_name .ratings{
+  margin: 6px 0;
+}
+#course_details .left_section .course_info .course_name .ratings i{
+  color: #175cff;
+  font-size: .9rem;
+}
+#course_details .left_section .course_info .course_name p{
+  margin-top: 2.5rem;
+  font-size: 2rem;
+}
+#course_details .left_section .course_info span{
+  font-size: 2rem;
+  background: black;
+  padding: 16px 22px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+}
+#course_details .left_section h2{
+  color: #175cff;
+}
+#course_details .left_section .tutor{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+  position: relative;
+}
+#course_details .left_section .tutor .tutor_img{
+  width: 80px;
+  height: 80px;
+}
+#course_details .left_section .tutor .tutor_img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#course_details .left_section .tutor h5{
+  font-size: 1.5rem;
+  color: #175cff;
+  font-weight: 600;
+}
+#course_details .left_section .tutor p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: gray;
+  letter-spacing: 1px;
+}
+#course_details .left_section .tutor .line::after{
+  content: '';
+  width: 100%;
+  background: black;
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  height: 1px;
+}
+#course_details .left_section .course_desc{
+  margin-top: 4.4rem;
+  color: #175cff;
+  position: relative;
+  width: 100%;
+}
+
+#course_details .left_section .course_desc p{
+  padding-top: 1.2rem;
+  text-align: justify;
+  color: gray;
+}
+#course_details .left_section .course_desc .line::after{
+  content: '';
+  width: 100%;
+  background: black;
+  position: absolute;
+  bottom: -2rem;
+  height: 1px;
+}
+#course_details .left_section .course_adventages{
+  margin-top: 4.4rem;
+  color: #175cff;
+  position: relative;
+}
+#course_details .left_section .course_adventages h2{
+  margin-bottom: 1.2rem;
+}
+#course_details .left_section .course_adventages .advantages{
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+#course_details .left_section .course_adventages p{
+  font-size: 15px;
+  color: gray;
+}
+#course_details .left_section .course_adventages i{
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  background: #175cff;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #175cff;
+}
+#course_details .right_section{
+  width: 28%;
+  padding: 0 30px 30px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 20px 40px 0 rgb(11 2 55 / 8%);
+}
+#course_details .right_section h2{
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  color: black;
+}
+#course_details .right_section .include{
+  margin-bottom: 1.4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  font-size: 15px;
+  color: #175cff;
+}
+#course_details .right_section .include i{
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  background: #175cff;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+}
+#course_details .right_section .include p{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#course_details .btn{
+  margin-top: 30px;
+  text-align: center;
+}
+#course_details a{
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  font-weight: 700;
+  border-radius: 20px;
+  transition: .5s ease;
+}
+.courses_head{
+  height: 50vh !important;
+}
+
+@media screen and (max-width: 1020px) {
+  #course_details .left_section{
+    width: 60%;
+  }  
+  #course_details .right_section{
+    width: 35%;
+  } 
+}
+
+@media screen and (max-width: 767px) {
+  #about{
+    height: 70vh;
+  }
+  #about_details{
+    padding: 8vw 4vw 2vw 4vw;
+  }
+  #about_details .abot_img{
+    padding-right: 30px;
+  }
+  #course_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw 4vw 8vw 4vw;
+  }
+  #course_details .left_section{
+    width: 100%;
+  }  
+  #course_details .right_section{
+    margin-top: 2rem;
+    width: 60%;
+  } 
+}
+
+@media screen and (max-width: 660px) {
+  #about_details{
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  #about_details .abot_img{
+    width: 100%;
+    padding-right: 0;
+  }
+  #about_details .about_text{
+    width: 100%;
+  }
+  #tursties .trusted_img {
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  #course_details .left_section .course_desc p {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width:570px) {
+  #course_details .left_section .course_info .course_name {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 470px) {
+  #about{
+    height: 50vh;
+  }
+  #about_details{
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  #about_details .abot_img{
+    width: 100%;
+    padding-right: 0;
+  }
+  #about_details .about_text{
+    width: 100%;
+  }
+ 
+  #course_details .left_section .course_info span {
+    font-size: .8rem;
+    padding: 10px 4px 10px 4px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -16rem;
+    right: -.5rem;
+  }
+  #course_details .left_section .course_info .course_name {
+    width: 100%;
+  }
+  #about h2 {
+    color: #fff;
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+    padding: 0 10px 0 10px;
+  }
+  #course_details .right_section {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    padding: 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+    scroll-padding-top: 7rem;
+  }
+  .home .box {
+    padding: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-position: right !important;
+  }
+  .home .box.second {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-position: left !important;
+  }
+  .home .box .content {
+    text-align: center;
+  }
+  .home .box .content span {
+    font-size: 3rem;
+  }
+  .home .box .content h3 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: fixed;
+    top: 0;
+    left: -110%;
+    background: #fff;
+    z-index: 10000;
+    width: 35rem;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .navbar.active {
+    left: 0;
+    -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  }
+  .header .navbar a {
+    margin: 1rem 0;
+    font-size: 3rem;
+  }
+  .header .navbar #nav-close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+/*    display: none;*/
+  }
+  section {
+    padding: 6rem 4rem;
+  }
+  .heading {
+    text-align: center;
+  }
+  .cta .container{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  .newsletter .content .heading,
+  .cta .container h1.heading {
+    text-align: center;
+  }
+  .newsletter .content {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+  }
+}
+@media (max-width: 580px){
+  .home .box {
+    min-height: 49vh;
+    margin-top: 7rem;
+  }
+  .newsletter .content form {
+    width: 72%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading {
+    font-size: 3rem;
+  }
+  .footer .box-container .box {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}
